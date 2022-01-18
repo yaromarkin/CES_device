@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1026</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>-10</y>
+      <width>371</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <widget class="QGraphicsView" name="powerOffScreen">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>60</y>
+       <width>251</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="displayScreen">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>60</y>
+       <width>251</width>
+       <height>251</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="frequencyLabel">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>270</y>
+       <width>54</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="waveformLabel">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>270</y>
+       <width>54</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="timeLabel_20min">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>140</y>
+       <width>54</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 16pt &quot;Noto Sans&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="timeLabel_40min">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>140</y>
+       <width>54</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 16pt &quot;Noto Sans&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="timeLabel_60min">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>140</y>
+       <width>54</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 16pt &quot;Noto Sans&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_8">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>220</y>
+       <width>14</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_5">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>220</y>
+       <width>14</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>220</y>
+       <width>14</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_1">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>220</y>
+       <width>14</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_10">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>220</y>
+       <width>14</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_6">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>220</y>
+       <width>14</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_9">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>220</y>
+       <width>14</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_4">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>220</y>
+       <width>14</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>220</y>
+       <width>14</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="current_7">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>220</y>
+       <width>14</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>14</width>
+       <height>19</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="deviceView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>361</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/res/device.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="increaseCurrentButton">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>310</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/res/upButton.svg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="decreaseCurrentButton">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/res/downButton.svg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="frequencyButton">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>310</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/res/freqButton.svg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="waveformButton">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>310</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/res/waveButton.svg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="timeButton">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>360</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/res/timeButton.svg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="powerButton">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>360</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/res/powerButton.svg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="onLabel">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>70</y>
+       <width>54</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ON</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="offLabel">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>70</y>
+       <width>54</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OFF</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="countdownLabel">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>170</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 20pt &quot;Noto Sans&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="batteryBar">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>70</y>
+       <width>40</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>12</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>12</height>
+      </size>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lowBatteryWarning_2P">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>90</y>
+       <width>201</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>201</width>
+       <height>17</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>201</width>
+       <height>17</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(164, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lowBatteryWarning_5P">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>100</y>
+       <width>201</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>201</width>
+       <height>17</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>201</width>
+       <height>17</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(128,128,0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="recordButton">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>360</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/res/recordButton.svg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>powerOffScreen</zorder>
+    <zorder>displayScreen</zorder>
+    <zorder>current_9</zorder>
+    <zorder>current_3</zorder>
+    <zorder>current_1</zorder>
+    <zorder>current_6</zorder>
+    <zorder>current_2</zorder>
+    <zorder>current_10</zorder>
+    <zorder>current_8</zorder>
+    <zorder>current_4</zorder>
+    <zorder>current_7</zorder>
+    <zorder>current_5</zorder>
+    <zorder>timeLabel_40min</zorder>
+    <zorder>timeLabel_20min</zorder>
+    <zorder>frequencyLabel</zorder>
+    <zorder>waveformLabel</zorder>
+    <zorder>deviceView</zorder>
+    <zorder>increaseCurrentButton</zorder>
+    <zorder>decreaseCurrentButton</zorder>
+    <zorder>frequencyButton</zorder>
+    <zorder>waveformButton</zorder>
+    <zorder>timeButton</zorder>
+    <zorder>powerButton</zorder>
+    <zorder>offLabel</zorder>
+    <zorder>onLabel</zorder>
+    <zorder>countdownLabel</zorder>
+    <zorder>timeLabel_60min</zorder>
+    <zorder>lowBatteryWarning_2P</zorder>
+    <zorder>lowBatteryWarning_5P</zorder>
+    <zorder>batteryBar</zorder>
+    <zorder>recordButton</zorder>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>70</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apply To Skin</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chargeButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>160</y>
+      <width>111</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Charge</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SaveRecordingButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>240</y>
+      <width>111</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save Recording</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LoadRecordingButton">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>240</y>
+      <width>101</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load Recordings</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="batteryLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>160</y>
+      <width>91</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableView" name="RecordView">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>290</y>
+      <width>521</width>
+      <height>241</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="percentLabel">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>160</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>16</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="currentFaultButton">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>80</y>
+      <width>111</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Current Fault</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1026</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

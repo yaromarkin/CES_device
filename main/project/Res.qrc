@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/downButton.svg</file>
+        <file>res/upButton.svg</file>
+        <file>res/device.png</file>
+        <file>res/freqButton.svg</file>
+        <file>res/waveButton.svg</file>
+        <file>res/timeButton.svg</file>
+        <file>res/powerButton.svg</file>
+        <file>res/recordButton.svg</file>
+    </qresource>
+</RCC>
